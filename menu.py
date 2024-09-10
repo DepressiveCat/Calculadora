@@ -22,6 +22,7 @@ def menu():
         else:
             print("Opcion invalida ingrese números entre 1-5")
         input('Presione Enter Para Continuar.')
+        
         os.system('cls')
     
     
