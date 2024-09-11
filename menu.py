@@ -11,16 +11,13 @@ def menu():
         opcion = int(input("Su opcion: "))
         
         if opcion == 1:
-            print("Ingreso Primer Operando")
             a = ingresar_primer_operando()
         elif opcion == 2:
-            print("Ingreso Segundo Operando")
             b = ingresar_segundo_operando()
         elif opcion == 3:
             if a == None or b == None:
                 print('debe ingresar todos los operadores para ingresar.')
             else:
-                print("Calculo todas las operaciones")
                 calculo = True
                 suma = sumar_operandos(a,b)
                 resta = restar_operandos(a,b)
@@ -35,8 +32,7 @@ def menu():
             if calculo == False:
                 print('hay que hacer los calculos antes de informarlos.')
             else:
-                print("Informo todos los resultados")
-                print(f'Suma: {suma}\nResta: {resta}\nDivisión: {division}\nMultiplicación: {multiplicacion}\nPotencia: {potencia}\nResto: {resto}\nFactorial A: {factorial_a}\nFactorial B: {factorial_b}\n')
+                print(f'El resultado de {a} + {b} es: {suma}\nEl resultado de {a} - {b} es: {resta}\nEl resultado de {a} / {b} es: {division}\nEl resultado de {a} * {b} es: {multiplicacion}\nEl resultado de {a} * {b} es: {potencia}\nEl resultado de {a} % {b} es: {resto}\nEl factorial de A es: {factorial_a} y El factorial de B es: {factorial_b}\n')
                 
         elif opcion == 5:
             print("Saliendo...")

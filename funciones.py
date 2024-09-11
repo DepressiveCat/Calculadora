@@ -18,7 +18,7 @@ def restar_operandos(a,b):
 
 def calcular_division(a,b):
     if a == 0 or b == 0:
-        return 'no se puede dividir por cero'
+        return 'No es posible dividir por cero'
     division = a / b
     return division
 
@@ -31,6 +31,8 @@ def calcular_potencia(a,b):
     return potencia
 
 def calcular_resto(a,b):
+    if a == 0 or b == 0:
+        return 'No es posible dividir por cero'
     resto = a % b
     return resto
 
