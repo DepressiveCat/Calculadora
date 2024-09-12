@@ -11,9 +11,9 @@ def menu():
         opcion = int(input("Su opcion: "))
         
         if opcion == 1:
-            a = ingresar_primer_operando()
+            a = ingresar_operando('ingrese primer operando: ')
         elif opcion == 2:
-            b = ingresar_segundo_operando()
+            b = ingresar_operando('ingrese segundo operando: ')
         elif opcion == 3:
             if a == None or b == None:
                 print('debe ingresar todos los operadores para ingresar.')
@@ -25,8 +25,8 @@ def menu():
                 multiplicacion = calcular_multiplicacion(a,b)
                 potencia = calcular_potencia(a,b)
                 resto = calcular_resto(a,b)
-                factorial_a = calcular_factorial_a(a)
-                factorial_b = calcular_factorial_b(b)
+                factorial_a = calcular_factorial(a)
+                factorial_b = calcular_factorial(b)
 
         elif opcion == 4:
             if calculo == False:

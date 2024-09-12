@@ -1,12 +1,7 @@
-def ingresar_primer_operando():
-    a = input('ingrese primer operando: ')
+def ingresar_operando(mensaje):
+    a = input(mensaje)
     a = int(a)
     return a
-
-def ingresar_segundo_operando():
-    b = input('ingrese segundo operando: ')
-    b = int(b)
-    return b
 
 def sumar_operandos(a,b):
     suma = a + b
@@ -36,17 +31,9 @@ def calcular_resto(a,b):
     resto = a % b
     return resto
 
-def calcular_factorial_a(a):
-    if a == 0:
-        factorial_a = 1
+def calcular_factorial(numero):
+    if numero == 0:
+        factorial = 1
     else: 
-        factorial_a = a * calcular_factorial_a(a-1)    
-    return factorial_a
-
-def calcular_factorial_b(b):
-    if b == 0:
-        factorial_b = 1
-    else: 
-        factorial_b = b * calcular_factorial_b(b-1)
-    return factorial_b 
-
+        factorial = numero * calcular_factorial(numero-1)    
+    return factorial
